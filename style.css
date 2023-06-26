@@ -1,0 +1,241 @@
+
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 0.2rem #000;
+    transition: top 0.5s;
+}
+.nav-link{
+    color: #aaa;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+   
+}
+.nav-link:hover{
+    color: #ffffff;
+}
+/*  */
+
+.section-1{
+    width: 100%;
+    height: 800px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ .section-heading{
+    font-size: 100px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+/* h2.section-heading{
+    font-size: 200px;
+} */
+.section-1-icons{
+    display: flex;
+   flex-direction: row;
+   
+}
+.section-1-icons i{
+    font-size: 200px;
+    color: #f96209;
+   
+  
+}
+
+
+.section-2{
+    background-color: #222;
+    width: 100%;
+    height: 900px;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .cards-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    background-color: #f68a06;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1rem 1rem 1rem #000;
+    /* transform: rotateY(20deg) skewX(-2deg);
+    transition: transform 0.5s, box-shadow 0.5s; */
+}
+
+.card:hover{
+    /* transform: rotateY(20deg) skewX(-2deg) translateY(-2rem); */
+    box-shadow: 2rem 2rem 2rem #000;
+}
+
+
+
+.card-img{
+    width: 100%;
+}
+
+ .card-name{
+    font-size: 25px;
+    font-weight: 800;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    color: #111;
+    text-shadow: 0.15rem 0.15rem 0.15rem #000;
+}
+
+.card-btn{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: -0.2rem -0.2rem 0.1rem #000;
+    border: none;
+    width: 70%;
+    background-color: #111;
+    color: #888;
+    border-radius: 4rem;
+    padding: 0.8rem 0;
+    cursor: pointer;
+}  
+
+
+/* Third section styling */
+.section-3{
+    background-color: #333;
+    padding: 5rem 0;
+}
+
+ .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.gallery-link{
+    position: relative;
+    margin: 50px;
+    cursor: pointer;
+}
+
+
+.food-img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 6px 6px 3px #e92929, 6px 6px 3px #a2e946, 12px 12px 3px #297ce9, 18px 18px 3px #e92999;
+    transition: all 0.5s;
+}
+
+ .gallery-link:hover .food-img{
+    transform: scale(1.1);
+    opacity: 0.5;
+    filter: blur(8px);
+    box-shadow: 12px 12px 3px #e92929, 18px 18px 3px #a2e946, 34px 34px 3px #297ce9, 40px 40px 3px #e92999;
+}
+
+.food-name{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.gallery-link:hover .food-name{
+    width: 100%;
+    transition: width 1.5s 0.4s;
+}
+
+ .food-description{
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.gallery-link:hover .food-description{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
+}
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #493e37;
+    
+}
+.footer .box-container{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.footer .box-container .box h3{
+    font-size: 40px;
+    padding:10px;
+    color:rgb(231, 223, 223);
+}
+
+.footer .box-container .box a{
+    display: flex;
+    font-size: 20px;
+    padding:40px;
+    color: #ffffff;
+    
+}
+
+.footer .box-container .box a i{
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 20px;
+}
